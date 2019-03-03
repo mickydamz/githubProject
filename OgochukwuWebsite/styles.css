@@ -1,0 +1,170 @@
+/* Color Palette
+#2B2D42 - dark blue
+#8D99AE - light blue
+#EDF2F4 - blue/white
+#EF233C - red
+*/
+
+
+
+
+
+
+
+/*global styles*/
+html {
+  box-sizing: border-box;
+
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+h1, h2 {
+  font-family: 'Caveat', cursive;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 80px;
+}
+h2 {
+  font-size: 40px;
+  margin-top: 0;
+}
+h3 {
+  margin: 0;
+}
+
+a {
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+}
+
+#work experience{
+
+}
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 60px 50px;
+  overflow: hidden;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/*header*/
+header, footer {
+  background:crimson;
+  color: #8D99AE;
+}
+
+header {
+  padding-top: 50px;
+  position: relative;*
+}
+header h1, header h2 {
+  color: #EDF2F4;
+  margin: 0;
+}
+
+.profile-img {
+  border-radius: 50%;
+}
+
+footer {
+  text-align: center;
+}
+.contact-info a {
+  padding: 10px;
+  display: inline-block;
+}
+
+nav {
+  text-align: center;
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+    color:crimson;
+}
+
+
+.work {
+  background:lightblue;
+}
+h3 ~ p {
+  margin: 0;
+
+}
+.job-description {
+  margin-bottom: 25px;
+
+}
+.job-description p:first-of-type {
+  margin-top: 0;
+
+}
+
+
+/* Education
+-------------------------*/
+.education {
+  background: linear-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)),
+              url(toronto.jpg) no-repeat fixed;
+  background-size: cover;
+}
+p + h3 {
+  margin-top: 30px;
+/*  border:3px solid red;*/
+}
+
+@media (min-width: 900px) {
+  .col-narrow {
+    width: 30%;
+    float: left;
+    font-size:10px;
+  }
+  .col-wide {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+
+  }
+}
+
+
+@media (max-width: 899px){
+  header {
+    text-align: center;
+    font-size:1em;
+  }
+
+header h1, header h2{
+    text-align: center;
+    font-size:2em;
+  }
+  .profile-img {
+    width: 200px;
+    margin-top: 2.5em;
+    padding-top: 2em;
+  }
+}
